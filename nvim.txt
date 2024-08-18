@@ -1,0 +1,84 @@
+Cheatsheets for nvim motions
+
+u - Undo
+C-r - Redo the last undo change
+
+Move Word by Word
+w, b, e, ge  (word) 
+W, B, E, gE  (WORD)
+
+Move to a Specific Character
+f{character} (in the line) ; (for next occurence) , (for previous occurence)
+t{character} (just infront of the character in line)
+
+Move horizontally extremely
+0 - first character of line
+^ - first non blank character of line (useful for python indentations)
+$ - end of line
+g_ - non blank character at the end of the line
+
+
+Move vertically extremely
+k j - move vertically
+} - jumps entire paragraph downwards
+{ - jumps entire paragraph upwards
+C-d - moves down half a page
+C-u - moves up half a page
+gg - top of file
+G - end of file
+{line}gg - specific line of file
+
+
+Operators
+d - delete
+c - change
+y - yank(copy)
+p - paste
+g~ - switch Case
+> - shift right
+< - shift left
+= - format
+
+dd - delete line
+cc - change a line
+yy - yank(copy) a line
+g~~ - switch case of line
+>> - switch line right
+<< - switch line left
+
+D - delete from cursor to the end of line
+C - change from cursor to the end of line
+Y - yank from cursor to the end of line
+P - paste from cursor to the end of line
+
+
+. - Repeat last change
+
+
+I - Insert mode at the beginning of line
+A - Insert mode at the end of line
+o - Insert new line below the current line and go to insert mode
+O - Insert new line above the current line and go to insert mode
+
+C-H - delete last character
+C-W - delete last word
+C-U - delete last line
+
+
+:edit {file} or :e {file}  - create or edit a file
+:w - save file
+:q - close file
+:w! - force save file
+:wall - save all files
+:wqall - save and close all files
+
+
+SPLITTING WINDOWS
+:sp Open file in a horizontal Split
+:vsp Open file in a vertical Split
+C-W S - Open same file in horizontal Split
+C-W V - Open same file in vertical Split
+C-W h - Move to the split to the left
+C-W j -Move to the split below
+C-W k - Move to the split above
+C-W l - Move to the split to the right
