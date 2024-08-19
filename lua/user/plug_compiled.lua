@@ -2,6 +2,7 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
+Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'nvim-lua/plenary.nvim'
 Plug ('nvim-telescope/telescope.nvim')
 Plug 'nvim-tree/nvim-web-devicons' -- optional
@@ -16,9 +17,6 @@ Plug ('hrsh7th/nvim-cmp')
 Plug ('hrsh7th/cmp-nvim-lsp')
 Plug ('L3MON4D3/LuaSnip')
 Plug ('VonHeikemen/lsp-zero.nvim', {branch = 'v3.x'})
-
-
-
 -- Autocompletions
 Plug('hrsh7th/nvim-cmp')
 
