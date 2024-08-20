@@ -1,18 +1,5 @@
 local lsp = require('lsp-zero')
 
-
-require('lspconfig').pylyzer.setup({
-    settings = {
-        python = {
-            checkOnType = false,
-            smartCompletion = true,
-            diagnostics = true,
-            inlayHints = true,
-        }
-    }
-
-})
-
 require('mason').setup({})
 require('mason-lspconfig').setup({
 	-- Replace the language servers listed
