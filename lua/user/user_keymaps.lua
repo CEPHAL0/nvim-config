@@ -17,3 +17,4 @@ keymap("n", "N", "Nzzv")
 keymap("n", "<leader>y", "\"+y")
 keymap("v", "<leader>y", "\"+y")
 keymap("n", "<leader>Y", "\"+Y")
+
