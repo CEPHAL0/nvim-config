@@ -34,4 +34,6 @@ Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'adalessa/laravel.nvim'
+Plug 'kylechui/nvim-surround'
+
 vim.call('plug#end')
