@@ -71,3 +71,11 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)  
 lsp.setup()
+
+local lspconfig = require('lspconfig')
+lspconfig.emmet_language_server.setup({
+    filetypes = {"css", "eruby", "html", "javascript", "javascriptreact",
+        "less", "sass", "scss", "pug", "blade"}
+})
+
+
