@@ -36,5 +36,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'adalessa/laravel.nvim'
 Plug 'kylechui/nvim-surround'
 Plug 'lewis6991/gitsigns.nvim'
+Plug 'kevinhwang91/nvim-ufo'
+Plug 'kevinhwang91/promise-async'
 
 vim.call('plug#end')
