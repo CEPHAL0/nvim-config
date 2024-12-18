@@ -60,3 +60,24 @@ parser_configs.blade = {
     },
     filetype = "blade"
 }
+
+-- Enable Tree-sitter and setup for Blade-like files
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = {"php", "blade", "html", "lua"}, -- Ensure these parsers are installed
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+  indent = {
+    enable = true,
+  },
+}
+
+-- Set indent for blade directives
+vim.cmd [[
+  augroup BladeIndent
+    autocmd!
+    autocmd FileType blade setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+  augroup END
+]]
+

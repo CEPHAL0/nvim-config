@@ -39,4 +39,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'kevinhwang91/nvim-ufo'
 Plug 'kevinhwang91/promise-async'
 
+-- Rich Presence
+Plug 'andweeb/presence.nvim'
+
 vim.call('plug#end')
