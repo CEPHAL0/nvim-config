@@ -5,7 +5,7 @@ vim.call('plug#begin')
 Plug 'nvim-treesitter/nvim-treesitter-context'
 Plug 'nvim-lua/plenary.nvim'
 Plug ('nvim-telescope/telescope.nvim')
-Plug 'nvim-tree/nvim-web-devicons' -- optional
+Plug 'nvim-tree/nvim-web-devicons' 
 Plug 'nvim-tree/nvim-tree.lua'
 Plug ('nvim-treesitter/nvim-treesitter', { ['do'] = ':TSUpdate' })
 Plug 'ThePrimeagen/harpoon'
