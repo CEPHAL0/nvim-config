@@ -21,7 +21,7 @@ vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
             local time = os.date("%I:%M %p")
 
             -- print nice colored msg
-            vim.api.nvim_echo({ { "󰄳", "LazyProgressDone" }, { "File Saved" } }, false, {})
+            vim.api.nvim_echo({ { "󰄳 ", "LazyProgressDone" }, { "File Saved" } }, false, {})
 
             clear_cmdarea()
         end
